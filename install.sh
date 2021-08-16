@@ -16,7 +16,7 @@ if [[ $cmd ==  "githooks" ]]; then
     mkdir -p $gitHooksPath
   fi
 
-  if cp -R resources/git-hooks/* $gitHooksPath; then
+  if cp -R xcode-templates/git-hooks/* $gitHooksPath; then
     success "Copied git hooks successfully"
   fi
   exit
