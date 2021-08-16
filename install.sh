@@ -3,6 +3,25 @@
 
 source scripts/helpers.sh
 
+cmd=$1
+if [[ $cmd ==  "githooks" ]]; then
+  projectPath=$2
+  if [[ ! -d $projectPath ]]; then
+    info "Directory doesn't exist or missing"
+    exit
+  fi
+
+  gitHooksPath="${projectPath}/.git/hooks"
+  if [[ ! -d $gitHooksPath ]]; then
+    mkdir -p $gitHooksPath
+  fi
+
+  if cp -R xcode-templates/git-hooks/* $gitHooksPath; then
+    success "Copied git hooks successfully"
+  fi
+  exit
+fi
+
 # ----------------------------------
 # Templates
 # ----------------------------------
