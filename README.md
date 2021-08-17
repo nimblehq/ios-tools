@@ -28,7 +28,7 @@ bash install.sh githooks [path_to_project]
 1. [Standard File Organization](https://github.com/nimblehq/ios-templates/wiki/Standard-file-organization)
 2. [Project Configurations](https://github.com/nimblehq/ios-templates/wiki/Project-configurations)
 3. [Why having project's dependencies](https://github.com/nimblehq/ios-templates/wiki/Why-having-project%27s-dependencies)
-4. [Code Snippets](https://github.com/nimblehq/ios-templates/wiki/Code-Snippets)
+4. [Code Snippets](https://github.com/nimblehq/ios-tools/wiki/Code-Snippets)
 
 ## About
 
